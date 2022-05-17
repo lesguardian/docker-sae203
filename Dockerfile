@@ -13,7 +13,7 @@ RUN  apt-get update && \
 
 
 #COPY /home/etudiant/gj201661/TP/s2/sae2_03/travail/sae2_03/git/html  
-COPY /home/etudiant/gj201661/TP/s2/sae2_03/travail/sae2_03/git/videos  /usr/local/apache2/htdocs/
+#COPY /home/etudiant/gj201661/TP/s2/sae2_03/travail/sae2_03/git/videos  /usr/local/apache2/htdocs/
 
 RUN index.html
 
