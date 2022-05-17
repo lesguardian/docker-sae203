@@ -17,4 +17,4 @@ COPY /home/etudiant/gj201661/TP/s2/sae2_03/travail/sae2_03/videos  /usr/local/ap
 
 RUN index.html
 
-Expose 80
+EXPOSE 80
