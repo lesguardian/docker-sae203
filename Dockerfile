@@ -7,8 +7,10 @@ RUN  apt-get update && \
 
 #COPY /home/etudiant/gj201661/TP/s2/sae2_03/travail/sae2_03/git/html  
 COPY ./videos/  /usr/local/apache2/htdocs/
+COPY ./html/index.html /var/www/html
+COPY ./html/style.css /var/www/html
 
 
 EXPOSE 80
 
-CMD ["/usr/sbin/apache2ctl -DFOREGROUND"]
+CMD ["/usr/sbin/apache2ctl", "-DFOREGROUND"]
