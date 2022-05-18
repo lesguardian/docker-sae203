@@ -6,7 +6,7 @@ RUN  apt-get update && \
 
 
 #COPY /home/etudiant/gj201661/TP/s2/sae2_03/travail/sae2_03/git/html  
-COPY $(pwd)/docker-sae203  /usr/local/apache2/htdocs/
+COPY $(pwd)/docker-sae203/videos  /usr/local/apache2/htdocs/
 
 
 EXPOSE 80
