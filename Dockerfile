@@ -6,7 +6,7 @@ RUN  apt-get update && \
 
 
 #COPY /home/etudiant/gj201661/TP/s2/sae2_03/travail/sae2_03/git/html  
-COPY ./videos/  /usr/local/apache2/htdocs/
+COPY ./videos/  /var/www/html
 COPY ./html/index.html /var/www/html
 COPY ./html/style.css /var/www/html
 
