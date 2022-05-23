@@ -1,29 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SAE_2.03 : Services Réseaux</title>
+        <meta name = "Equipe 19" lang ="fr" content = "Equipe 19"/>
+        <meta charset= "utf-8"> 
+        <link rel="stylesheet" href="index.css" media="all" type="text/css" />
+    </head>
 
-
-<html> 
-   <head> 
-      <title>SAE_2.03</title>
-      <link href="style.css" media="all" rel="stylesheet" type="text/css" />
-	   <meta charset="UTF-8"> 
-   </head> 	
-   <body> 
-      <header>
-         <div class="logo"></div>
-         <div><center><h1>Sae2_03</h1></center></div>
-         <div>Année 2021/2022</div>
-      </header>
-
-
-      <video controls width="1000">
-
-
-     
-         <source src="./videos/juan.mp4"
-                 type="video/mp4">
-     
-      </video>
-      <footer>
-         <center>GUESDON Jules, DENIAUD Alexis, DIHL Matteo</center>
-     </footer>
-   </body> 
-</html> 
+    <body>
+        <header>
+                <a href = "index.html"><img src ="./images/logoUniv.gif"></a> 
+                <h1>SAE2.03</h1>
+                <h2>Services réseaux</h2>
+                <h3>SITE DE VIDÉOS A LA DEMANDE <br><p style="color: rgb(180,180,180) ; margin-top: -0%; font-family: 'Times New Roman', Times, serif;">DENIAUD Alexis - DIHL Matteo - GUESDON Jules </p></h3>
+        </header>
+        
+        <nav>
+            <table id = "tablePlaylist">
+                <thead>
+                    <tr id = "titrePlaylist">
+                        <th colspan="2">Playlists</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id = "TRnav">
+                        <td><a href="html/playlist/musique.html"><img id="miniaturePlaylist" src="images/openingYourLieInApril.jpg"></a></td>
+                        <td id="TDnav"><a href="html/playlist/musique.html"><div id="playlist">Musique</div></a></td>
+                    </tr>
+                    <tr id = "TRnav">
+                        <td><a href="html/playlist/memes.html"><img id="miniaturePlaylist" src="images/Juan.jpg"></a></td>
+                        <td id="TDnav"><a href="html/playlist/memes.html"><div id="playlist">Memes</div></a></td>
+                    </tr>
+                    <tr id = "TRnav">
+                        <td><a href="html/playlist/sport.html"><img id="miniaturePlaylist" src="images/dodgeball.jpg"></a></td>
+                        <td id="TDnav"><a href="html/playlist/sport.html"><div id="playlist">Sport</div></a></td>
+                    </tr>
+                    <tr id = "TRnav">
+                        <td><a href="html/playlist/politique.html"><img id="miniaturePlaylist" src="images/valerie.jpg"></a></td>
+                        <td id="TDnav"><a href="html/playlist/politique.html"><div id="playlist">Politique</div></a></td>
+                    </tr>
+                    <tr id = "TRnav">
+                        <td><a href="html/playlist/animation.html"><img id="miniaturePlaylist" src="images/zawarudo.jpg"></a></td>
+                        <td id="TDnav"><a href="html/playlist/animation.html"><div id="playlist">Animation</div></a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </nav>
+        <table id="tableauVideo">
+            <tr id = "trVideo">
+                <td id = "vignette">
+                    <a id = "miniature" href="./html/leflambeau.html"> <img src="./images/leflambeau.jpg" onmouseover="this.src='./images/leflambeau_gif.webp'" onmouseout="this.src='./images/leflambeau.jpg'" title="leflambeau.html" alt="leflambeau"> </a>
+                </td>
+                <td id = "infos">
+                    <a href="./html/leflambeau.html"><div id = "titre">LE FLAMBEAU : LA FLAMME Saison 2 Bande Annonce (2022) Jonathan Cohen, Pierre Niney</div></a>
+                    <div id = "vues">611 k vues - il y a 3 semaines</div>
+                </td>
+            </tr>
+            <tr id = "trVideo">
+                <td id = "vignette">
+                    <a id = "miniature" href="./html/openingYourLieInApril.html"> <img src="./images/openingYourLieInApril.jpg" onmouseover="this.src='./images/openingYourLieInApril_gif.jpg'" onmouseout="this.src='./images/openingYourLieInApril.jpg'" title="openingYourLieInApril.html" alt="yourlieinapril"> </a>
+                </td>
+                <td id = "infos">
+                    <a href="./html/openingYourLieInApril.html"><div id = "titre">「Creditless」Your Lie In April OP / Opening 1「UHD 60FPS」</div></a>
+                    <div id = "vues">1,1 M de vues - il y a 6 mois</div>
+                </td>
+            </tr>
+            <tr id = "trVideo">
+                <td id = "vignette">
+                    <a  href="./html/valerie.html"> <img id = "miniature" src="./images/valerie.jpg" onmouseover="this.src='./images/valerie_gif.webp'" onmouseout="this.src='./images/valerie.jpg'" title="valerie.html" alt="valerie"> </a>
+                </td>
+                <td id = "infos">
+                    <a  href="./html/valerie.html"><div id = "titre">Valérie Pécresse : 2 Minutes de malaise INTÉGRAL</div></a>
+                    <div id = "vues">31 k vues - il y a 3 mois</div>
+                </td>
+            </tr>
+            <tr id = "trVideo">
+                <td id = "vignette">
+                    <a id = "miniature" href="./html/Juan.html"> <img src="./images/Juan.jpg" onmouseover="this.src='./images/Juan_gif.webp'" onmouseout="this.src='./images/Juan.jpg'" title="Juan.html" alt="Juan"> </a>
+                </td>
+                <td id = "infos">
+                    <a href="./html/Juan.html"><div id = "titre">Juan.</div></a>
+                    <div id = "vues">12 M de vues - il y a 1 an</div>
+                </td>
+            </tr>
+            <tr id = "trVideo">
+                <td id = "vignette">
+                    <a id = "miniature" href="./html/dodgeball.html"> <img src="./images/dodgeball.jpg" onmouseover="this.src='./images/dodgeball_gif.webp'" onmouseout="this.src='./images/dodgeball.jpg'" title="dodgeball.html" alt="dodgeball"> </a>
+                </td>
+                <td id = "infos">
+                    <a href="./html/dodgeball.html"><div id = "titre">Insane Dodge Ball Kill! [Original]</div></a>
+                    <div id = "vues">26 M de vues - il y a 9 ans</div>
+                </td>
+            </tr>
+            <tr id = "trVideo">
+                <td id = "vignette">
+                    <a id = "miniature" href="./html/zawarudo.html"> <img src="./images/zawarudo.jpg" onmouseover="this.src='./images/zawarudo_gif.webp'" onmouseout="this.src='./images/zawarudo.jpg'" title="zawarudo.html" alt="zawarudo"> </a>
+                </td>
+                <td id = "infos">
+                    <a href="./html/dodgeball.html"><div id = "titre">ZA WARUDO</div></a>
+                    <div id = "vues">7,1 M de vues - il y a 6 ans</div>
+                </td>
+            </tr>
+            <tr id = "trVideo">
+                <td id = "vignette">
+                    <a id = "miniature" href="./html/jujutsu.html"> <img src="./images/jujutsu.jpg" onmouseover="this.src='./images/jujutsu_gif.webp'" onmouseout="this.src='./images/jujutsu.jpg'" title="jujutsu.html" alt="jujutsu"> </a>
+                </td>
+                <td id = "infos">
+                    <a href="./html/jujutsu.html"><div id = "titre">JUJUTSU KAISEN - Ending | Lost in Paradise feat. AKLO</div></a>
+                    <div id = "vues">21 M de vues - il y a 1 an</div>
+                </td>
+            </tr>
+            <tr id = "trVideo">
+                <td id = "vignette">
+                    <a id = "miniature" href="./html/kimetsunoyaibatrailer.html"> <img src="./images/kimetsunoyaiba.jpg" onmouseover="this.src='./images/kimetsunoyaiba_gif.webp'" onmouseout="this.src='./images/kimetsunoyaiba.jpg'" title="kimetsunoyaibatrailer.html" alt="kimetsu"> </a>
+                </td>
+                <td id = "infos">
+                    <a href="./html/kimetsunoyaiba.html"><div id = "titre">Demon Slayer: Kimetsu no Yaiba Swordsmith Village Arc Trailer</div></a>
+                    <div id = "vues">7,5 M de vues - il y a 1 mois</div>
+                </td>
+            </tr>
+            <tr id = "trVideo">
+                <td id = "vignette">
+                    <a id = "miniature" href="./html/lemotderichelieu.html"> <img src="./images/lemotderichelieu.jpg" onmouseover="this.src='./images/lemotderichelieu_gif.webp'" onmouseout="this.src='./images/lemotderichelieu.jpg'" title="lemotderichelieu.html" alt="lemotderichelieu"> </a>
+                </td>
+                <td id = "infos">
+                    <a href="./html/lemotderichelieu.html"><div id = "titre">Eric Zemmour "Le mot de Richelieu HIIIIIN !!" [Source Brute]</div></a>
+                    <div id = "vues">57 k vues - il y a 7 mois</div>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
