@@ -5,10 +5,14 @@ RUN  apt-get update && \
     apache2 
 
 
-#COPY /home/etudiant/gj201661/TP/s2/sae2_03/travail/sae2_03/git/html  
-COPY ./videos/  /var/www/html
-COPY ./html/index.html /var/www/html
-COPY ./html/style.css /var/www/html
+CMD ["cd var/www/html"]
+CMD ["mkdir videos"]
+CMD ["mkdir images"]
+COPY ./videos  /var/www/html/videos
+COPY ./images  /var/www/html/images
+CMD ["cd .."]
+COPY ./html /var/www/html
+
 
 
 EXPOSE 80
