@@ -36,7 +36,9 @@ si vous voulez supprimer le conteneur :
 
 
 
- 
+ Par rapport à Docker:
+	Docker est un logiciel qui permet "d'empaqueter" dans des conteneurs logiciels. Ils pourront alors
+	être exécuté sur n'importe quel serveur.
 
 
 
